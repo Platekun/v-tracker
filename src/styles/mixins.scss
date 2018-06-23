@@ -1,0 +1,17 @@
+@mixin render-from($point) {
+  @media (min-width: $point) {
+    @content;
+  }
+}
+
+@mixin render-until($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
+
+@mixin render-between($pointA, $pointB) {
+  @media (min-width: $pointA) and (max-width: $pointB) {
+    @content;
+  }
+}

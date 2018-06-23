@@ -1,0 +1,24 @@
+{
+  "name": "v-tracker",
+  "version": "0.1.0",
+  "author": {
+    "name": "Carlos Lobo"
+  },
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "./node_modules/.bin/node-sass-chokidar ./src/styles/index.scss ./src/bundle.css",
+    "watch-css": "./node_modules/.bin/node-sass-chokidar ./src/styles/index.scss ./src/bundle.css --watch"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "^1.3.0"
+  }
+}
